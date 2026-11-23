@@ -1,0 +1,5 @@
+.jac/
+dist/
+.agents/
+__pycache__/
+*.pem

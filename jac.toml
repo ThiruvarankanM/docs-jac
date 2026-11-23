@@ -1,0 +1,64 @@
+[project]
+name = "docs"
+exclude = ["proof/*"]
+
+[packages]
+docs_transport = { path = "plugins/docs_transport" }
+oidc_auth = { path = "plugins/oidc_auth" }
+
+[transport]
+plugin = "docs_transport"
+
+[auth]
+plugin = "oidc_auth"
+
+[auth.oidc_auth]
+authorization_endpoint = "http://127.0.0.1:8600/auth"
+token_endpoint = "http://127.0.0.1:8600/token"
+jwks_endpoint = "http://127.0.0.1:8600/jwks"
+user_endpoint = "http://127.0.0.1:8600/userinfo"
+client_id = "docs"
+redirect_uri = "http://127.0.0.1:8072/api/v1.0/callback/"
+scopes = "openid email"
+
+[transport.docs_transport]
+routes = [
+    "GET /api/v1.0/config/ = api.config.config",
+    "GET /api/v1.0/users/me/ = api.users.me",
+    "POST /api/v1.0/users/onboarding-done/ = api.users.onboarding_done",
+    "GET /api/v1.0/users/ = api.users.search(query)",
+    "PATCH /api/v1.0/users/{id}/ = api.users.update(id, body)",
+    "PUT /api/v1.0/users/{id}/ = api.users.update(id, body)",
+    "GET /api/v1.0/documents/favorites/ = api.documents.favorites(query, base)",
+    "GET /api/v1.0/documents/trashbin/ = api.documents.trashbin(query, base)",
+    "GET /api/v1.0/documents/all/ = api.documents.all_docs(query, base)",
+    "GET /api/v1.0/documents/ = api.documents.listing(query, base)",
+    "POST /api/v1.0/documents/ = api.documents.create(body)",
+    "GET /api/v1.0/documents/{pk}/ = api.documents.retrieve(pk)",
+    "PATCH /api/v1.0/documents/{pk}/ = api.documents.patch(pk, body)",
+    "PUT /api/v1.0/documents/{pk}/ = api.documents.put(pk, body)",
+    "DELETE /api/v1.0/documents/{pk}/ = api.documents.destroy(pk)",
+    "GET /api/v1.0/documents/{pk}/abilities/ = api.documents.abilities_of(pk)",
+    "GET /api/v1.0/documents/{pk}/children/ = api.documents.children(pk, query, base)",
+    "POST /api/v1.0/documents/{pk}/children/ = api.documents.add_child(pk, body)",
+    "GET /api/v1.0/documents/{pk}/tree/ = api.documents.tree(pk)",
+    "PUT /api/v1.0/documents/{pk}/link-configuration/ = api.documents.link_configuration(pk, body)",
+    "POST /api/v1.0/documents/{pk}/favorite/ = api.documents.favorite(pk)",
+    "DELETE /api/v1.0/documents/{pk}/favorite/ = api.documents.unfavorite(pk)",
+    "POST /api/v1.0/documents/{pk}/leave/ = api.documents.leave(pk)",
+    "POST /api/v1.0/documents/{pk}/move/ = api.documents.move(pk, body)",
+    "POST /api/v1.0/documents/{pk}/restore/ = api.documents.restore(pk)",
+    "GET /api/v1.0/documents/{pk}/accesses/me/ = api.accesses.my_access(pk)",
+    "GET /api/v1.0/documents/{pk}/accesses/ = api.accesses.list_accesses(pk)",
+    "POST /api/v1.0/documents/{pk}/accesses/ = api.accesses.create_access(pk, body)",
+    "GET /api/v1.0/documents/{pk}/accesses/{id}/ = api.accesses.get_access(pk, id)",
+    "PATCH /api/v1.0/documents/{pk}/accesses/{id}/ = api.accesses.patch_access(pk, id, body)",
+    "PUT /api/v1.0/documents/{pk}/accesses/{id}/ = api.accesses.put_access(pk, id, body)",
+    "DELETE /api/v1.0/documents/{pk}/accesses/{id}/ = api.accesses.delete_access(pk, id)",
+    "GET /api/v1.0/documents/{pk}/invitations/ = api.invitations.list_invitations(pk, query, base)",
+    "POST /api/v1.0/documents/{pk}/invitations/ = api.invitations.create_invitation(pk, body)",
+    "GET /api/v1.0/documents/{pk}/invitations/{id}/ = api.invitations.get_invitation(pk, id)",
+    "PATCH /api/v1.0/documents/{pk}/invitations/{id}/ = api.invitations.patch_invitation(pk, id, body)",
+    "PUT /api/v1.0/documents/{pk}/invitations/{id}/ = api.invitations.put_invitation(pk, id, body)",
+    "DELETE /api/v1.0/documents/{pk}/invitations/{id}/ = api.invitations.delete_invitation(pk, id)",
+]

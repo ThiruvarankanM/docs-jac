@@ -1,0 +1,8 @@
+[project]
+name = "oidc_auth"
+kind = "plugin"
+
+[plugin]
+fills = "auth"
+interface_ver = 1
+class = "oidc_auth.oidc.OidcAuth"

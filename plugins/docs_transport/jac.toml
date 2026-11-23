@@ -1,0 +1,8 @@
+[project]
+name = "docs_transport"
+kind = "plugin"
+
+[plugin]
+fills = "transport"
+interface_ver = 1
+class = "docs_transport.http.DocsTransport"

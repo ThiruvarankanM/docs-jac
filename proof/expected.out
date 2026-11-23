@@ -1,0 +1,5631 @@
+### anon GET config/ -> 200
+{
+ "AI_BOT": {
+  "name": "Docs AI",
+  "color": "#8bc6ff"
+ },
+ "AI_FEATURE_ENABLED": false,
+ "AI_FEATURE_BLOCKNOTE_ENABLED": false,
+ "AI_FEATURE_LEGACY_ENABLED": true,
+ "API_USERS_SEARCH_QUERY_MIN_LENGTH": 3,
+ "COLLABORATION_HTTP_FALLBACK_AWARENESS_ENABLED": true,
+ "COLLABORATION_HTTP_FALLBACK_JSON_ENABLED": false,
+ "COLLABORATION_HTTP_FALLBACK_SYNC_INTERVAL": 10000,
+ "COLLABORATION_LOCAL_DOC_RETENTION_DAYS": 30,
+ "COLLABORATION_VERSION_GRANULARITY_MS": 60000,
+ "COLLABORATION_WS_URL": "ws://127.0.0.1:3002/collaboration/ws/v1/docs",
+ "COLLABORATION_WS_INACTIVITY_TIMEOUT": null,
+ "CONVERSION_FILE_EXTENSIONS_ALLOWED": [
+  ".docx",
+  ".md"
+ ],
+ "CONVERSION_FILE_MAX_SIZE": 20971520,
+ "CONVERSION_UPLOAD_ENABLED": false,
+ "DOCUMENT_IMAGE_MAX_SIZE": 10485760,
+ "DUPLICATE_CHILDREN_FEATURE_ENABLED": true,
+ "ENVIRONMENT": "development",
+ "FRONTEND_CSS_URL": null,
+ "FRONTEND_HOMEPAGE_FEATURE_ENABLED": true,
+ "FRONTEND_JS_URL": null,
+ "FRONTEND_SILENT_LOGIN_ENABLED": false,
+ "FRONTEND_THEME": null,
+ "MEDIA_BASE_URL": "http://127.0.0.1:8072",
+ "POSTHOG_KEY": null,
+ "POSTHOG_HOST": "https://eu.i.posthog.com",
+ "LANGUAGES": [
+  [
+   "en-us",
+   "English"
+  ],
+  [
+   "fr-fr",
+   "Français"
+  ],
+  [
+   "de-de",
+   "Deutsch"
+  ],
+  [
+   "nl-nl",
+   "Nederlands"
+  ],
+  [
+   "es-es",
+   "Español"
+  ]
+ ],
+ "LANGUAGE_CODE": "en-us",
+ "REACTIONS_MAX_PER_COMMENT": 15,
+ "SENTRY_DSN": null,
+ "TRASHBIN_CUTOFF_DAYS": 30,
+ "theme_customization": {
+  "footer": {
+   "default": {
+    "logo": {
+     "src": "/assets/icon-docs.svg",
+     "alt": "Docs Logo",
+     "width": 54,
+     "height": 63,
+     "style": {
+      "width": "54px",
+      "height": "auto"
+     },
+     "withTitle": true
+    },
+    "externalLinks": [
+     {
+      "label": "GitHub",
+      "href": "https://github.com/suitenumerique/docs/"
+     },
+     {
+      "label": "DINUM",
+      "href": "https://www.numerique.gouv.fr/dinum/"
+     },
+     {
+      "label": "ZenDiS",
+      "href": "https://zendis.de/"
+     },
+     {
+      "label": "BlockNote.js",
+      "href": "https://www.blocknotejs.org/"
+     }
+    ],
+    "bottomInformation": {
+     "label": "Unless otherwise stated, all content on this site is under",
+     "link": {
+      "label": "licence etalab-2.0",
+      "href": "https://github.com/etalab/licence-ouverte/blob/master/LO.md"
+     }
+    }
+   },
+   "en": {
+    "legalLinks": [
+     {
+      "label": "Legal Notice",
+      "href": "#"
+     },
+     {
+      "label": "Personal data and cookies",
+      "href": "#"
+     },
+     {
+      "label": "Accessibility",
+      "href": "#"
+     }
+    ],
+    "bottomInformation": {
+     "label": "Unless otherwise stated, all content on this site is under",
+     "link": {
+      "label": "licence MIT",
+      "href": "https://github.com/suitenumerique/docs/blob/main/LICENSE"
+     }
+    }
+   },
+   "fr": {
+    "legalLinks": [
+     {
+      "label": "Mentions légales",
+      "href": "#"
+     },
+     {
+      "label": "Données personnelles et cookies",
+      "href": "#"
+     },
+     {
+      "label": "Accessibilité",
+      "href": "#"
+     }
+    ],
+    "bottomInformation": {
+     "label": "Sauf mention contraire, tout le contenu de ce site est sous",
+     "link": {
+      "label": "licence MIT",
+      "href": "https://github.com/suitenumerique/docs/blob/main/LICENSE"
+     }
+    }
+   },
+   "de": {
+    "legalLinks": [
+     {
+      "label": "Impressum",
+      "href": "#"
+     },
+     {
+      "label": "Personenbezogene Daten und Cookies",
+      "href": "#"
+     },
+     {
+      "label": "Barrierefreiheit",
+      "href": "#"
+     }
+    ],
+    "bottomInformation": {
+     "label": "Sofern nicht anders angegeben, steht der gesamte Inhalt dieser Website unter",
+     "link": {
+      "label": "licence MIT",
+      "href": "https://github.com/suitenumerique/docs/blob/main/LICENSE"
+     }
+    }
+   },
+   "nl": {
+    "legalLinks": [
+     {
+      "label": "Wettelijke bepalingen",
+      "href": "#"
+     },
+     {
+      "label": "Persoonlijke gegevens en cookies",
+      "href": "#"
+     },
+     {
+      "label": "Toegankelijkheid",
+      "href": "#"
+     }
+    ],
+    "bottomInformation": {
+     "label": "Tenzij anders vermeld, is alle inhoud van deze site ondergebracht onder",
+     "link": {
+      "label": "licence MIT",
+      "href": "https://github.com/suitenumerique/docs/blob/main/LICENSE"
+     }
+    }
+   }
+  },
+  "home": {
+   "with-proconnect": false,
+   "icon-banner": {
+    "src": "/assets/icon-docs.svg",
+    "width": 64,
+    "height": 74,
+    "style": {
+     "width": "64px",
+     "height": "auto"
+    },
+    "alt": ""
+   }
+  },
+  "header": {
+   "logo": {},
+   "icon": {
+    "src": "/assets/icon-docs.svg",
+    "width": 40,
+    "height": 40,
+    "style": {
+     "width": "40px",
+     "height": "auto"
+    },
+    "alt": "",
+    "withTitle": true
+   }
+  },
+  "favicon": {
+   "light": {
+    "href": "/assets/favicon-light.png",
+    "type": "image/png"
+   },
+   "dark": {
+    "href": "/assets/favicon-dark.png",
+    "type": "image/png"
+   }
+  },
+  "onboarding": {
+   "enabled": true,
+   "learn_more_url": "",
+   "ready_template_url": ""
+  },
+  "help": {
+   "documentation_url": "",
+   "support_mailto": "",
+   "legal_links": {
+    "personal_data": "",
+    "terms_of_use": "",
+    "accessibility_statement": "",
+    "legal_notice": ""
+   }
+  }
+ },
+ "RELEASE_VERSION": "6.1.0"
+}
+### anon GET users/me/ -> 401
+{
+ "detail": "Authentication credentials were not provided."
+}
+### amy GET users/me/ -> 200
+{
+ "id": "<amy>",
+ "email": "amy@example.com",
+ "full_name": "amy",
+ "short_name": "amy",
+ "language": null,
+ "is_first_connection": true
+}
+### bob GET users/me/ -> 200
+{
+ "id": "<bob>",
+ "email": "bob@example.com",
+ "full_name": "bob",
+ "short_name": "bob",
+ "language": null,
+ "is_first_connection": true
+}
+### cat GET users/me/ -> 200
+{
+ "id": "<cat>",
+ "email": "cat@example.com",
+ "full_name": "cat",
+ "short_name": "cat",
+ "language": null,
+ "is_first_connection": true
+}
+### amy POST users/onboarding-done/ -> 200
+{
+ "detail": "Onboarding marked as done."
+}
+### amy GET users/me/ -> 200
+{
+ "id": "<amy>",
+ "email": "amy@example.com",
+ "full_name": "amy",
+ "short_name": "amy",
+ "language": null,
+ "is_first_connection": false
+}
+### amy POST documents/ {"title": "Plan"} -> 201
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000001",
+ "title": "Plan",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy POST documents/ {"title": "Notes"} -> 201
+{
+ "id": "<notes>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000002",
+ "title": "Notes",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy POST documents/ {} -> 201
+{
+ "id": "<blank>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000003",
+ "title": null,
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy POST documents/ {"title": 5} -> 201
+{
+ "id": "<id6>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000004",
+ "title": "5",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy POST documents/ {"title": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"} -> 400
+{
+ "title": [
+  "Ensure this field has no more than 255 characters."
+ ]
+}
+### amy POST documents/ {"id": "not-a-uuid"} -> 400
+{
+ "id": [
+  "Must be a valid UUID."
+ ]
+}
+### anon POST documents/ {"title": "nope"} -> 401
+{
+ "detail": "Authentication credentials were not provided."
+}
+### amy GET documents/ -> 200
+{
+ "count": 4,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<id6>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000004",
+   "title": "5",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<blank>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000003",
+   "title": null,
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<notes>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000002",
+   "title": "Notes",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<plan>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000001",
+   "title": "Plan",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/{plan}/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000001",
+ "title": "Plan",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### bob GET documents/{plan}/ -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### anon GET documents/{plan}/ -> 401
+{
+ "detail": "Authentication credentials were not provided."
+}
+### amy GET documents/00000000-0000-4000-8000-000000000000/ -> 404
+{
+ "detail": "No Document matches the given query."
+}
+### amy GET documents/{plan}/abilities/ -> 200
+{
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ }
+}
+### amy PATCH documents/{plan}/ {"title": "Plan v2"} -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy PUT documents/{notes}/ {"title": "Notes v2"} -> 200
+{
+ "id": "<notes>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 0,
+ "path": "0000002",
+ "title": "Notes v2",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### bob PATCH documents/{plan}/ {"title": "hack"} -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy POST documents/{plan}/children/ {"title": "Step 1"} -> 201
+{
+ "id": "<step1>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": "restricted",
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 2,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 0,
+ "numchild": 0,
+ "path": "00000010000001",
+ "title": "Step 1",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy POST documents/{plan}/children/ {"title": "Step 2"} -> 201
+{
+ "id": "<step2>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": "restricted",
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 2,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 0,
+ "numchild": 0,
+ "path": "00000010000002",
+ "title": "Step 2",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy POST documents/{step1}/children/ {"title": "Detail"} -> 201
+{
+ "id": "<detail>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": "restricted",
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 3,
+ "excerpt": null,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 0,
+ "numchild": 0,
+ "path": "000000100000010000001",
+ "title": "Detail",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy GET documents/{plan}/children/ -> 200
+{
+ "count": 2,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "restricted",
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<step2>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "restricted",
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "00000010000002",
+   "title": "Step 2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/{plan}/children/?title=step%202 -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step2>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "restricted",
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "00000010000002",
+   "title": "Step 2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/{detail}/tree/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 2,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": "owner",
+ "children": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "restricted",
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner",
+   "children": [
+    {
+     "id": "<detail>",
+     "abilities": {
+      "accesses_manage": true,
+      "accesses_view": true,
+      "ai_proxy": true,
+      "ai_transform": true,
+      "ai_translate": true,
+      "attachment_upload": true,
+      "media_check": true,
+      "children_list": true,
+      "children_create": true,
+      "collaboration_auth": true,
+      "comment": true,
+      "formatted_content": true,
+      "cors_proxy": true,
+      "descendants": true,
+      "destroy": true,
+      "duplicate": true,
+      "favorite": true,
+      "link_configuration": true,
+      "invite_owner": true,
+      "leave": false,
+      "mention": true,
+      "move": true,
+      "move_to_another_tree": true,
+      "partial_update": true,
+      "restore": false,
+      "retrieve": true,
+      "media_auth": true,
+      "link_select_options": {
+       "restricted": null,
+       "authenticated": [
+        "reader",
+        "commenter",
+        "editor"
+       ],
+       "public": [
+        "reader",
+        "commenter",
+        "editor"
+       ]
+      },
+      "tree": true,
+      "update": true,
+      "versions_list": true,
+      "search": true
+     },
+     "ancestors_link_reach": "restricted",
+     "ancestors_link_role": null,
+     "computed_link_reach": "restricted",
+     "computed_link_role": null,
+     "created_at": "<date>",
+     "creator": "<amy>",
+     "deleted_at": null,
+     "depth": 3,
+     "excerpt": null,
+     "is_favorite": false,
+     "link_role": "reader",
+     "link_reach": "restricted",
+     "nb_accesses_ancestors": 1,
+     "nb_accesses_direct": 0,
+     "numchild": 0,
+     "path": "000000100000010000001",
+     "title": "Detail",
+     "updated_at": "<date>",
+     "user_role": "owner",
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "<step2>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "restricted",
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "00000010000002",
+   "title": "Step 2",
+   "updated_at": "<date>",
+   "user_role": "owner",
+   "children": []
+  }
+ ]
+}
+### bob GET documents/{detail}/tree/ -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy GET documents/{step1}/ -> 200
+{
+ "id": "<step1>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": "restricted",
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 2,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 0,
+ "numchild": 1,
+ "path": "00000010000001",
+ "title": "Step 1",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy PUT documents/{plan}/link-configuration/ {"link_reach": "public", "link_role": "commenter"} -> 200
+{
+ "link_role": "commenter",
+ "link_reach": "public"
+}
+### amy PUT documents/{step1}/link-configuration/ {"link_reach": "authenticated", "link_role": "reader"} -> 400
+{
+ "link_reach": [
+  "Link reach 'authenticated' is not allowed based on parent document configuration."
+ ]
+}
+### amy PUT documents/{step1}/link-configuration/ {"link_reach": "public", "link_role": "editor"} -> 200
+{
+ "link_role": "editor",
+ "link_reach": "public"
+}
+### amy PUT documents/{notes}/link-configuration/ {"link_reach": "restricted", "link_role": "reader"} -> 400
+{
+ "link_role": [
+  "Cannot set link_role when link_reach is 'restricted'. Link role must be null for restricted reach."
+ ]
+}
+### amy PUT documents/{notes}/link-configuration/ {"link_reach": "restricted", "link_role": null} -> 400
+{
+ "link_role": [
+  "This field may not be null."
+ ]
+}
+### amy PUT documents/{notes}/link-configuration/ {"link_role": "editor"} -> 400
+{
+ "link_reach": [
+  "This field is required."
+ ]
+}
+### amy PUT documents/{notes}/link-configuration/ {"link_reach": "galaxy"} -> 400
+{
+ "link_reach": [
+  "\"galaxy\" is not a valid choice."
+ ]
+}
+### anon GET documents/{step1}/ -> 200
+{
+ "id": "<step1>",
+ "abilities": {
+  "accesses_manage": false,
+  "accesses_view": false,
+  "ai_proxy": false,
+  "ai_transform": false,
+  "ai_translate": false,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": false,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": false,
+  "duplicate": false,
+  "favorite": false,
+  "link_configuration": false,
+  "invite_owner": false,
+  "leave": false,
+  "mention": false,
+  "move": false,
+  "move_to_another_tree": false,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "public": [
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": false,
+  "search": true
+ },
+ "ancestors_link_reach": "public",
+ "ancestors_link_role": "commenter",
+ "computed_link_reach": "public",
+ "computed_link_role": "editor",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 2,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "editor",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 0,
+ "numchild": 1,
+ "path": "00000010000001",
+ "title": "Step 1",
+ "updated_at": "<date>",
+ "user_role": null
+}
+### bob GET documents/{step1}/ -> 200
+{
+ "id": "<step1>",
+ "abilities": {
+  "accesses_manage": false,
+  "accesses_view": false,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": false,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": false,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": false,
+  "invite_owner": false,
+  "leave": true,
+  "mention": false,
+  "move": false,
+  "move_to_another_tree": false,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "public": [
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": false,
+  "search": true
+ },
+ "ancestors_link_reach": "public",
+ "ancestors_link_role": "commenter",
+ "computed_link_reach": "public",
+ "computed_link_role": "editor",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 2,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "editor",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 0,
+ "numchild": 1,
+ "path": "00000010000001",
+ "title": "Step 1",
+ "updated_at": "<date>",
+ "user_role": null
+}
+### bob GET documents/ -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": false,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": true,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": false,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": null
+  }
+ ]
+}
+### bob GET documents/{detail}/tree/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": false,
+  "accesses_view": false,
+  "ai_proxy": false,
+  "ai_transform": false,
+  "ai_translate": false,
+  "attachment_upload": false,
+  "media_check": true,
+  "children_list": true,
+  "children_create": false,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": false,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": false,
+  "invite_owner": false,
+  "leave": false,
+  "mention": false,
+  "move": false,
+  "move_to_another_tree": false,
+  "partial_update": false,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": false,
+  "versions_list": false,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "public",
+ "computed_link_role": "commenter",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "commenter",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 1,
+ "nb_accesses_direct": 1,
+ "numchild": 2,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": null,
+ "children": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": false,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": true,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": false,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": null,
+   "children": [
+    {
+     "id": "<detail>",
+     "abilities": {
+      "accesses_manage": false,
+      "accesses_view": false,
+      "ai_proxy": true,
+      "ai_transform": true,
+      "ai_translate": true,
+      "attachment_upload": true,
+      "media_check": true,
+      "children_list": true,
+      "children_create": false,
+      "collaboration_auth": true,
+      "comment": true,
+      "formatted_content": true,
+      "cors_proxy": true,
+      "descendants": true,
+      "destroy": false,
+      "duplicate": true,
+      "favorite": true,
+      "link_configuration": false,
+      "invite_owner": false,
+      "leave": false,
+      "mention": false,
+      "move": false,
+      "move_to_another_tree": false,
+      "partial_update": true,
+      "restore": false,
+      "retrieve": true,
+      "media_auth": true,
+      "link_select_options": {
+       "public": [
+        "editor"
+       ]
+      },
+      "tree": true,
+      "update": true,
+      "versions_list": false,
+      "search": true
+     },
+     "ancestors_link_reach": "public",
+     "ancestors_link_role": "editor",
+     "computed_link_reach": "public",
+     "computed_link_role": "editor",
+     "created_at": "<date>",
+     "creator": "<amy>",
+     "deleted_at": null,
+     "depth": 3,
+     "excerpt": null,
+     "is_favorite": false,
+     "link_role": "reader",
+     "link_reach": "restricted",
+     "nb_accesses_ancestors": 1,
+     "nb_accesses_direct": 0,
+     "numchild": 0,
+     "path": "000000100000010000001",
+     "title": "Detail",
+     "updated_at": "<date>",
+     "user_role": null,
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "<step2>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": false,
+    "ai_transform": false,
+    "ai_translate": false,
+    "attachment_upload": false,
+    "media_check": true,
+    "children_list": true,
+    "children_create": false,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": false,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": false,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": false,
+    "versions_list": false,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "00000010000002",
+   "title": "Step 2",
+   "updated_at": "<date>",
+   "user_role": null,
+   "children": []
+  }
+ ]
+}
+### amy POST documents/{notes}/accesses/ {"user_id": "{bob}", "role": "editor"} -> 201
+{
+ "id": "<bob_notes>",
+ "document": {
+  "id": "<notes>",
+  "path": "0000002",
+  "depth": 1
+ },
+ "user": {
+  "id": "<bob>",
+  "email": "bob@example.com",
+  "full_name": "bob",
+  "short_name": "bob",
+  "language": null,
+  "is_first_connection": true
+ },
+ "team": "",
+ "role": "editor",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "max_ancestors_role": null,
+ "max_role": "editor",
+ "updated_at": "<date>",
+ "created_at": "<date>"
+}
+### amy POST documents/{notes}/accesses/ {"user_id": "{bob}", "role": "reader"} -> 400
+{
+ "__all__": [
+  "This user is already in this document."
+ ]
+}
+### amy POST documents/{plan}/accesses/ {"user_id": "{cat}", "role": "reader"} -> 201
+{
+ "id": "<cat_plan>",
+ "document": {
+  "id": "<plan>",
+  "path": "0000001",
+  "depth": 1
+ },
+ "user": {
+  "id": "<cat>",
+  "email": "cat@example.com",
+  "full_name": "cat",
+  "short_name": "cat",
+  "language": null,
+  "is_first_connection": true
+ },
+ "team": "",
+ "role": "reader",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "max_ancestors_role": null,
+ "max_role": "reader",
+ "updated_at": "<date>",
+ "created_at": "<date>"
+}
+### bob POST documents/{notes}/accesses/ {"user_id": "{cat}", "role": "reader"} -> 403
+{
+ "detail": "You are not allowed to manage accesses for this resource."
+}
+### amy GET documents/{notes}/accesses/ -> 200
+[
+ {
+  "id": "<id12>",
+  "document": {
+   "id": "<notes>",
+   "path": "0000002",
+   "depth": 1
+  },
+  "user": {
+   "id": "<amy>",
+   "email": "amy@example.com",
+   "full_name": "amy",
+   "short_name": "amy",
+   "language": null,
+   "is_first_connection": false
+  },
+  "team": "",
+  "role": "owner",
+  "abilities": {
+   "destroy": false,
+   "update": false,
+   "partial_update": false,
+   "retrieve": true,
+   "set_role_to": []
+  },
+  "max_ancestors_role": null,
+  "max_role": "owner",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ },
+ {
+  "id": "<bob_notes>",
+  "document": {
+   "id": "<notes>",
+   "path": "0000002",
+   "depth": 1
+  },
+  "user": {
+   "id": "<bob>",
+   "email": "bob@example.com",
+   "full_name": "bob",
+   "short_name": "bob",
+   "language": null,
+   "is_first_connection": true
+  },
+  "team": "",
+  "role": "editor",
+  "abilities": {
+   "destroy": true,
+   "update": true,
+   "partial_update": true,
+   "retrieve": true,
+   "set_role_to": [
+    "reader",
+    "commenter",
+    "editor",
+    "administrator",
+    "owner"
+   ]
+  },
+  "max_ancestors_role": null,
+  "max_role": "editor",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ }
+]
+### bob GET documents/{notes}/accesses/ -> 200
+[
+ {
+  "id": "<id12>",
+  "document": {
+   "id": "<notes>",
+   "path": "0000002",
+   "depth": 1
+  },
+  "user": {
+   "id": "<amy>",
+   "full_name": "amy",
+   "short_name": "amy"
+  },
+  "team": "",
+  "role": "owner",
+  "abilities": {
+   "destroy": false,
+   "update": false,
+   "partial_update": false,
+   "retrieve": false,
+   "set_role_to": []
+  },
+  "max_ancestors_role": null,
+  "max_role": "owner",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ },
+ {
+  "id": "<bob_notes>",
+  "document": {
+   "id": "<notes>",
+   "path": "0000002",
+   "depth": 1
+  },
+  "user": {
+   "id": "<bob>",
+   "full_name": "bob",
+   "short_name": "bob"
+  },
+  "team": "",
+  "role": "editor",
+  "abilities": {
+   "destroy": false,
+   "update": false,
+   "partial_update": false,
+   "retrieve": true,
+   "set_role_to": []
+  },
+  "max_ancestors_role": null,
+  "max_role": "editor",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ }
+]
+### cat GET documents/{step1}/accesses/ -> 200
+[
+ {
+  "id": "<id13>",
+  "document": {
+   "id": "<plan>",
+   "path": "0000001",
+   "depth": 1
+  },
+  "user": {
+   "id": "<amy>",
+   "full_name": "amy",
+   "short_name": "amy"
+  },
+  "team": "",
+  "role": "owner",
+  "abilities": {
+   "destroy": false,
+   "update": false,
+   "partial_update": false,
+   "retrieve": false,
+   "set_role_to": []
+  },
+  "max_ancestors_role": null,
+  "max_role": "owner",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ }
+]
+### bob GET documents/{notes}/accesses/me/ -> 200
+{
+ "id": "<bob_notes>",
+ "document": {
+  "id": "<notes>",
+  "path": "0000002",
+  "depth": 1
+ },
+ "user": {
+  "id": "<bob>",
+  "full_name": "bob",
+  "short_name": "bob"
+ },
+ "team": "",
+ "role": "editor",
+ "abilities": {
+  "destroy": false,
+  "update": false,
+  "partial_update": false,
+  "retrieve": true,
+  "set_role_to": []
+ },
+ "max_ancestors_role": null,
+ "max_role": "editor",
+ "updated_at": "<date>",
+ "created_at": "<date>"
+}
+### cat GET documents/{notes}/accesses/me/ -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy PATCH documents/{notes}/accesses/{bob_notes}/ {"role": "administrator"} -> 200
+{
+ "id": "<bob_notes>",
+ "document": {
+  "id": "<notes>",
+  "path": "0000002",
+  "depth": 1
+ },
+ "user": {
+  "id": "<bob>",
+  "email": "bob@example.com",
+  "full_name": "bob",
+  "short_name": "bob",
+  "language": null,
+  "is_first_connection": true
+ },
+ "team": "",
+ "role": "administrator",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "max_ancestors_role": null,
+ "max_role": "administrator",
+ "updated_at": "<date>",
+ "created_at": "<date>"
+}
+### bob GET documents/{notes}/accesses/ -> 200
+[
+ {
+  "id": "<id12>",
+  "document": {
+   "id": "<notes>",
+   "path": "0000002",
+   "depth": 1
+  },
+  "user": {
+   "id": "<amy>",
+   "email": "amy@example.com",
+   "full_name": "amy",
+   "short_name": "amy",
+   "language": null,
+   "is_first_connection": false
+  },
+  "team": "",
+  "role": "owner",
+  "abilities": {
+   "destroy": false,
+   "update": false,
+   "partial_update": false,
+   "retrieve": true,
+   "set_role_to": []
+  },
+  "max_ancestors_role": null,
+  "max_role": "owner",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ },
+ {
+  "id": "<bob_notes>",
+  "document": {
+   "id": "<notes>",
+   "path": "0000002",
+   "depth": 1
+  },
+  "user": {
+   "id": "<bob>",
+   "email": "bob@example.com",
+   "full_name": "bob",
+   "short_name": "bob",
+   "language": null,
+   "is_first_connection": true
+  },
+  "team": "",
+  "role": "administrator",
+  "abilities": {
+   "destroy": true,
+   "update": true,
+   "partial_update": true,
+   "retrieve": true,
+   "set_role_to": [
+    "reader",
+    "commenter",
+    "editor",
+    "administrator"
+   ]
+  },
+  "max_ancestors_role": null,
+  "max_role": "administrator",
+  "updated_at": "<date>",
+  "created_at": "<date>"
+ }
+]
+### bob PATCH documents/{notes}/accesses/{bob_notes}/ {"role": "owner"} -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy GET documents/{notes}/accesses/{bob_notes}/ -> 200
+{
+ "id": "<bob_notes>",
+ "document": {
+  "id": "<notes>",
+  "path": "0000002",
+  "depth": 1
+ },
+ "user": {
+  "id": "<bob>",
+  "email": "bob@example.com",
+  "full_name": "bob",
+  "short_name": "bob",
+  "language": null,
+  "is_first_connection": true
+ },
+ "team": "",
+ "role": "administrator",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "max_ancestors_role": null,
+ "max_role": "administrator",
+ "updated_at": "<date>",
+ "created_at": "<date>"
+}
+### bob GET documents/{notes}/ -> 200
+{
+ "id": "<notes>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": false,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": false,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": false,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 2,
+ "numchild": 0,
+ "path": "0000002",
+ "title": "Notes v2",
+ "updated_at": "<date>",
+ "user_role": "administrator"
+}
+### bob GET documents/ -> 200
+{
+ "count": 2,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": false,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": true,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": false,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": null
+  },
+  {
+   "id": "<notes>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": false,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": false,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 0,
+   "path": "0000002",
+   "title": "Notes v2",
+   "updated_at": "<date>",
+   "user_role": "administrator"
+  }
+ ]
+}
+### amy POST documents/{notes}/invitations/ {"email": "dan@example.com", "role": "editor"} -> 201
+{
+ "id": "<inv>",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "created_at": "<date>",
+ "email": "dan@example.com",
+ "document": "<notes>",
+ "role": "editor",
+ "issuer": "<amy>",
+ "is_expired": false
+}
+### amy POST documents/{notes}/invitations/ {"email": "dan@example.com", "role": "reader"} -> 400
+{
+ "__all__": [
+  "Document invitation with this Email address and Document already exists."
+ ]
+}
+### amy POST documents/{notes}/invitations/ {"email": "bob@example.com", "role": "reader"} -> 400
+{
+ "email": [
+  "This email is already associated to a registered user."
+ ]
+}
+### amy POST documents/{notes}/invitations/ {"email": "nope", "role": "reader"} -> 400
+{
+ "email": [
+  "Enter a valid email address."
+ ]
+}
+### cat POST documents/{plan}/invitations/ {"email": "eve@example.com", "role": "reader"} -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy GET documents/{notes}/invitations/ -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<inv>",
+   "abilities": {
+    "destroy": true,
+    "update": true,
+    "partial_update": true,
+    "retrieve": true,
+    "set_role_to": [
+     "reader",
+     "commenter",
+     "editor",
+     "administrator",
+     "owner"
+    ]
+   },
+   "created_at": "<date>",
+   "email": "dan@example.com",
+   "document": "<notes>",
+   "role": "editor",
+   "issuer": "<amy>",
+   "is_expired": false
+  }
+ ]
+}
+### cat GET documents/{notes}/invitations/ -> 200
+{
+ "count": 0,
+ "next": null,
+ "previous": null,
+ "results": []
+}
+### amy PATCH documents/{notes}/invitations/{inv}/ {"role": "administrator"} -> 200
+{
+ "id": "<inv>",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "created_at": "<date>",
+ "email": "dan@example.com",
+ "document": "<notes>",
+ "role": "administrator",
+ "issuer": "<amy>",
+ "is_expired": false
+}
+### amy GET documents/{notes}/invitations/{inv}/ -> 200
+{
+ "id": "<inv>",
+ "abilities": {
+  "destroy": true,
+  "update": true,
+  "partial_update": true,
+  "retrieve": true,
+  "set_role_to": [
+   "reader",
+   "commenter",
+   "editor",
+   "administrator",
+   "owner"
+  ]
+ },
+ "created_at": "<date>",
+ "email": "dan@example.com",
+ "document": "<notes>",
+ "role": "administrator",
+ "issuer": "<amy>",
+ "is_expired": false
+}
+### amy DELETE documents/{notes}/invitations/{inv}/ -> 204
+### amy GET documents/{notes}/invitations/ -> 200
+{
+ "count": 0,
+ "next": null,
+ "previous": null,
+ "results": []
+}
+### amy POST documents/{plan}/favorite/ -> 201
+{
+ "detail": "Document marked as favorite"
+}
+### amy POST documents/{plan}/favorite/ -> 200
+{
+ "detail": "Document already marked as favorite"
+}
+### amy POST documents/{step2}/favorite/ -> 201
+{
+ "detail": "Document marked as favorite"
+}
+### amy GET documents/favorites/ -> 200
+{
+ "count": 2,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<plan>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": true,
+   "link_role": "commenter",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 2,
+   "path": "0000001",
+   "title": "Plan v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<step2>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": true,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "00000010000002",
+   "title": "Step 2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/?is_favorite=true -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<plan>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": true,
+   "link_role": "commenter",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 2,
+   "path": "0000001",
+   "title": "Plan v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/?is_favorite=false&ordering=title -> 200
+{
+ "count": 3,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<id6>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000004",
+   "title": "5",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<notes>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 0,
+   "path": "0000002",
+   "title": "Notes v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<blank>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000003",
+   "title": null,
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy DELETE documents/{step2}/favorite/ -> 204
+### amy DELETE documents/{step2}/favorite/ -> 200
+{
+ "detail": "Document was already not marked as favorite"
+}
+### bob GET documents/?is_creator_me=false -> 200
+{
+ "count": 2,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": false,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": true,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": false,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": null
+  },
+  {
+   "id": "<notes>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": false,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": false,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": false,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 0,
+   "path": "0000002",
+   "title": "Notes v2",
+   "updated_at": "<date>",
+   "user_role": "administrator"
+  }
+ ]
+}
+### bob GET documents/?is_creator_me=true -> 200
+{
+ "count": 0,
+ "next": null,
+ "previous": null,
+ "results": []
+}
+### amy GET documents/?title=plan -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<plan>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": true,
+   "link_role": "commenter",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 2,
+   "path": "0000001",
+   "title": "Plan v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/?ordering=-title&page_size=2 -> 200
+{
+ "count": 4,
+ "next": "http://127.0.0.1:8072/api/v1.0/documents/?ordering=-title&page=2&page_size=2",
+ "previous": null,
+ "results": [
+  {
+   "id": "<blank>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000003",
+   "title": null,
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<plan>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": true,
+   "link_role": "commenter",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 2,
+   "path": "0000001",
+   "title": "Plan v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/?page=2&page_size=2 -> 200
+{
+ "count": 4,
+ "next": null,
+ "previous": "http://127.0.0.1:8072/api/v1.0/documents/?page_size=2",
+ "results": [
+  {
+   "id": "<id6>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000004",
+   "title": "5",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<blank>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000003",
+   "title": null,
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy GET documents/?page=9 -> 404
+{
+ "detail": "Invalid page."
+}
+### amy GET documents/all/ -> 200
+{
+ "count": 7,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 1,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<plan>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": true,
+   "link_role": "commenter",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 2,
+   "path": "0000001",
+   "title": "Plan v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<detail>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "editor",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 3,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "000000100000010000001",
+   "title": "Detail",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<step2>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "commenter",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 0,
+   "path": "00000010000002",
+   "title": "Step 2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<notes>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 2,
+   "numchild": 0,
+   "path": "0000002",
+   "title": "Notes v2",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<id6>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000004",
+   "title": "5",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  },
+  {
+   "id": "<blank>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 1,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 1,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000003",
+   "title": null,
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### amy POST documents/{step2}/move/ {"target_document_id": "{step1}", "position": "first-child"} -> 200
+{
+ "message": "Document moved successfully."
+}
+### amy GET documents/{plan}/tree/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "public",
+ "computed_link_role": "commenter",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": true,
+ "link_role": "commenter",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 2,
+ "numchild": 1,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": "owner",
+ "children": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 2,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner",
+   "children": []
+  }
+ ]
+}
+### amy POST documents/{step2}/move/ {"target_document_id": "{detail}", "position": "left"} -> 200
+{
+ "message": "Document moved successfully."
+}
+### amy POST documents/{plan}/move/ {"target_document_id": "{detail}", "position": "last-child"} -> 400
+{
+ "target_document_id": "Cannot move a document to its own descendant."
+}
+### amy POST documents/{step2}/move/ {"target_document_id": "{plan}", "position": "nowhere"} -> 400
+{
+ "position": [
+  "\"nowhere\" is not a valid choice."
+ ]
+}
+### amy POST documents/{step2}/move/ {"target_document_id": "00000000-0000-4000-8000-000000000000"} -> 400
+{
+ "target_document_id": "Target parent document does not exist."
+}
+### bob POST documents/{notes}/move/ {"target_document_id": "{plan}", "position": "first-child"} -> 400
+{
+ "target_document_id": "You do not have permission to move documents as a child to this target document."
+}
+### amy GET documents/{detail}/tree/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "public",
+ "computed_link_role": "commenter",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": true,
+ "link_role": "commenter",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 2,
+ "numchild": 1,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": "owner",
+ "children": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 2,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner",
+   "children": [
+    {
+     "id": "<step2>",
+     "abilities": {
+      "accesses_manage": true,
+      "accesses_view": true,
+      "ai_proxy": true,
+      "ai_transform": true,
+      "ai_translate": true,
+      "attachment_upload": true,
+      "media_check": true,
+      "children_list": true,
+      "children_create": true,
+      "collaboration_auth": true,
+      "comment": true,
+      "formatted_content": true,
+      "cors_proxy": true,
+      "descendants": true,
+      "destroy": true,
+      "duplicate": true,
+      "favorite": true,
+      "link_configuration": true,
+      "invite_owner": true,
+      "leave": false,
+      "mention": true,
+      "move": true,
+      "move_to_another_tree": true,
+      "partial_update": true,
+      "restore": false,
+      "retrieve": true,
+      "media_auth": true,
+      "link_select_options": {
+       "public": [
+        "editor"
+       ]
+      },
+      "tree": true,
+      "update": true,
+      "versions_list": true,
+      "search": true
+     },
+     "ancestors_link_reach": "public",
+     "ancestors_link_role": "editor",
+     "computed_link_reach": "public",
+     "computed_link_role": "editor",
+     "created_at": "<date>",
+     "creator": "<amy>",
+     "deleted_at": null,
+     "depth": 3,
+     "excerpt": null,
+     "is_favorite": false,
+     "link_role": "reader",
+     "link_reach": "restricted",
+     "nb_accesses_ancestors": 2,
+     "nb_accesses_direct": 0,
+     "numchild": 0,
+     "path": "000000100000010000002",
+     "title": "Step 2",
+     "updated_at": "<date>",
+     "user_role": "owner",
+     "children": []
+    },
+    {
+     "id": "<detail>",
+     "abilities": {
+      "accesses_manage": true,
+      "accesses_view": true,
+      "ai_proxy": true,
+      "ai_transform": true,
+      "ai_translate": true,
+      "attachment_upload": true,
+      "media_check": true,
+      "children_list": true,
+      "children_create": true,
+      "collaboration_auth": true,
+      "comment": true,
+      "formatted_content": true,
+      "cors_proxy": true,
+      "descendants": true,
+      "destroy": true,
+      "duplicate": true,
+      "favorite": true,
+      "link_configuration": true,
+      "invite_owner": true,
+      "leave": false,
+      "mention": true,
+      "move": true,
+      "move_to_another_tree": true,
+      "partial_update": true,
+      "restore": false,
+      "retrieve": true,
+      "media_auth": true,
+      "link_select_options": {
+       "public": [
+        "editor"
+       ]
+      },
+      "tree": true,
+      "update": true,
+      "versions_list": true,
+      "search": true
+     },
+     "ancestors_link_reach": "public",
+     "ancestors_link_role": "editor",
+     "computed_link_reach": "public",
+     "computed_link_role": "editor",
+     "created_at": "<date>",
+     "creator": "<amy>",
+     "deleted_at": null,
+     "depth": 3,
+     "excerpt": null,
+     "is_favorite": false,
+     "link_role": "reader",
+     "link_reach": "restricted",
+     "nb_accesses_ancestors": 2,
+     "nb_accesses_direct": 0,
+     "numchild": 0,
+     "path": "000000100000010000003",
+     "title": "Detail",
+     "updated_at": "<date>",
+     "user_role": "owner",
+     "children": []
+    }
+   ]
+  }
+ ]
+}
+### amy DELETE documents/{step1}/ -> 204
+### amy GET documents/{step1}/ -> 200
+{
+ "id": "<step1>",
+ "abilities": {
+  "accesses_manage": false,
+  "accesses_view": false,
+  "ai_proxy": false,
+  "ai_transform": false,
+  "ai_translate": false,
+  "attachment_upload": false,
+  "media_check": false,
+  "children_list": false,
+  "children_create": false,
+  "collaboration_auth": false,
+  "comment": false,
+  "formatted_content": false,
+  "cors_proxy": false,
+  "descendants": false,
+  "destroy": false,
+  "duplicate": false,
+  "favorite": false,
+  "link_configuration": false,
+  "invite_owner": false,
+  "leave": false,
+  "mention": false,
+  "move": false,
+  "move_to_another_tree": false,
+  "partial_update": false,
+  "restore": true,
+  "retrieve": true,
+  "media_auth": false,
+  "link_select_options": {
+   "public": [
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": false,
+  "versions_list": false,
+  "search": false
+ },
+ "ancestors_link_reach": "public",
+ "ancestors_link_role": "commenter",
+ "computed_link_reach": "public",
+ "computed_link_role": "editor",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": "<date>",
+ "depth": 2,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "editor",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 0,
+ "numchild": 2,
+ "path": "00000010000001",
+ "title": "Step 1",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy GET documents/{detail}/ -> 200
+{
+ "id": "<detail>",
+ "abilities": {
+  "accesses_manage": false,
+  "accesses_view": false,
+  "ai_proxy": false,
+  "ai_transform": false,
+  "ai_translate": false,
+  "attachment_upload": false,
+  "media_check": false,
+  "children_list": false,
+  "children_create": false,
+  "collaboration_auth": false,
+  "comment": false,
+  "formatted_content": false,
+  "cors_proxy": false,
+  "descendants": false,
+  "destroy": false,
+  "duplicate": false,
+  "favorite": false,
+  "link_configuration": false,
+  "invite_owner": false,
+  "leave": false,
+  "mention": false,
+  "move": false,
+  "move_to_another_tree": false,
+  "partial_update": false,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": false,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": false,
+  "versions_list": false,
+  "search": false
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "restricted",
+ "computed_link_role": null,
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": "<date>",
+ "depth": 3,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "reader",
+ "link_reach": "restricted",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 0,
+ "numchild": 0,
+ "path": "000000100000010000003",
+ "title": "Detail",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### cat GET documents/{step1}/ -> 404
+{
+ "detail": "Not found."
+}
+### amy GET documents/{plan}/children/ -> 200
+{
+ "count": 0,
+ "next": null,
+ "previous": null,
+ "results": []
+}
+### amy GET documents/{plan}/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "public",
+ "computed_link_role": "commenter",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": true,
+ "link_role": "commenter",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 2,
+ "numchild": 0,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": "owner"
+}
+### amy GET documents/trashbin/ -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": false,
+    "ai_transform": false,
+    "ai_translate": false,
+    "attachment_upload": false,
+    "media_check": false,
+    "children_list": false,
+    "children_create": false,
+    "collaboration_auth": false,
+    "comment": false,
+    "formatted_content": false,
+    "cors_proxy": false,
+    "descendants": false,
+    "destroy": false,
+    "duplicate": false,
+    "favorite": false,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": false,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": false,
+    "restore": true,
+    "retrieve": true,
+    "media_auth": false,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": false,
+    "versions_list": false,
+    "search": false
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": "<date>",
+   "depth": 2,
+   "excerpt": null,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 2,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### bob DELETE documents/{plan}/ -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy POST documents/{step1}/restore/ -> 200
+{
+ "detail": "Document has been successfully restored."
+}
+### amy POST documents/{step1}/restore/ -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy GET documents/{plan}/tree/ -> 200
+{
+ "id": "<plan>",
+ "abilities": {
+  "accesses_manage": true,
+  "accesses_view": true,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": true,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": true,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": true,
+  "invite_owner": true,
+  "leave": false,
+  "mention": true,
+  "move": true,
+  "move_to_another_tree": true,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "restricted": null,
+   "authenticated": [
+    "reader",
+    "commenter",
+    "editor"
+   ],
+   "public": [
+    "reader",
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": true,
+  "search": true
+ },
+ "ancestors_link_reach": null,
+ "ancestors_link_role": null,
+ "computed_link_reach": "public",
+ "computed_link_role": "commenter",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 1,
+ "excerpt": null,
+ "is_favorite": true,
+ "link_role": "commenter",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 2,
+ "numchild": 1,
+ "path": "0000001",
+ "title": "Plan v2",
+ "updated_at": "<date>",
+ "user_role": "owner",
+ "children": [
+  {
+   "id": "<step1>",
+   "abilities": {
+    "accesses_manage": true,
+    "accesses_view": true,
+    "ai_proxy": true,
+    "ai_transform": true,
+    "ai_translate": true,
+    "attachment_upload": true,
+    "media_check": true,
+    "children_list": true,
+    "children_create": true,
+    "collaboration_auth": true,
+    "comment": true,
+    "formatted_content": true,
+    "cors_proxy": true,
+    "descendants": true,
+    "destroy": true,
+    "duplicate": true,
+    "favorite": true,
+    "link_configuration": true,
+    "invite_owner": true,
+    "leave": false,
+    "mention": true,
+    "move": true,
+    "move_to_another_tree": true,
+    "partial_update": true,
+    "restore": false,
+    "retrieve": true,
+    "media_auth": true,
+    "link_select_options": {
+     "public": [
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": true,
+    "versions_list": true,
+    "search": true
+   },
+   "ancestors_link_reach": "public",
+   "ancestors_link_role": "commenter",
+   "computed_link_reach": "public",
+   "computed_link_role": "editor",
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": null,
+   "depth": 2,
+   "excerpt": null,
+   "is_favorite": false,
+   "link_role": "editor",
+   "link_reach": "public",
+   "nb_accesses_ancestors": 2,
+   "nb_accesses_direct": 0,
+   "numchild": 2,
+   "path": "00000010000001",
+   "title": "Step 1",
+   "updated_at": "<date>",
+   "user_role": "owner",
+   "children": []
+  }
+ ]
+}
+### amy DELETE documents/{blank}/ -> 204
+### amy GET documents/trashbin/ -> 200
+{
+ "count": 1,
+ "next": null,
+ "previous": null,
+ "results": [
+  {
+   "id": "<blank>",
+   "abilities": {
+    "accesses_manage": false,
+    "accesses_view": false,
+    "ai_proxy": false,
+    "ai_transform": false,
+    "ai_translate": false,
+    "attachment_upload": false,
+    "media_check": false,
+    "children_list": false,
+    "children_create": false,
+    "collaboration_auth": false,
+    "comment": false,
+    "formatted_content": false,
+    "cors_proxy": false,
+    "descendants": false,
+    "destroy": false,
+    "duplicate": false,
+    "favorite": false,
+    "link_configuration": false,
+    "invite_owner": false,
+    "leave": false,
+    "mention": false,
+    "move": false,
+    "move_to_another_tree": false,
+    "partial_update": false,
+    "restore": true,
+    "retrieve": true,
+    "media_auth": false,
+    "link_select_options": {
+     "restricted": null,
+     "authenticated": [
+      "reader",
+      "commenter",
+      "editor"
+     ],
+     "public": [
+      "reader",
+      "commenter",
+      "editor"
+     ]
+    },
+    "tree": true,
+    "update": false,
+    "versions_list": false,
+    "search": false
+   },
+   "ancestors_link_reach": null,
+   "ancestors_link_role": null,
+   "computed_link_reach": "restricted",
+   "computed_link_role": null,
+   "created_at": "<date>",
+   "creator": "<amy>",
+   "deleted_at": "<date>",
+   "depth": 1,
+   "excerpt": null,
+   "link_role": "reader",
+   "link_reach": "restricted",
+   "nb_accesses_ancestors": 0,
+   "nb_accesses_direct": 1,
+   "numchild": 0,
+   "path": "0000003",
+   "title": null,
+   "updated_at": "<date>",
+   "user_role": "owner"
+  }
+ ]
+}
+### cat POST documents/{plan}/leave/ -> 204
+### cat GET documents/ -> 200
+{
+ "count": 0,
+ "next": null,
+ "previous": null,
+ "results": []
+}
+### bob GET documents/{step1}/ -> 200
+{
+ "id": "<step1>",
+ "abilities": {
+  "accesses_manage": false,
+  "accesses_view": false,
+  "ai_proxy": true,
+  "ai_transform": true,
+  "ai_translate": true,
+  "attachment_upload": true,
+  "media_check": true,
+  "children_list": true,
+  "children_create": false,
+  "collaboration_auth": true,
+  "comment": true,
+  "formatted_content": true,
+  "cors_proxy": true,
+  "descendants": true,
+  "destroy": false,
+  "duplicate": true,
+  "favorite": true,
+  "link_configuration": false,
+  "invite_owner": false,
+  "leave": true,
+  "mention": false,
+  "move": false,
+  "move_to_another_tree": false,
+  "partial_update": true,
+  "restore": false,
+  "retrieve": true,
+  "media_auth": true,
+  "link_select_options": {
+   "public": [
+    "commenter",
+    "editor"
+   ]
+  },
+  "tree": true,
+  "update": true,
+  "versions_list": false,
+  "search": true
+ },
+ "ancestors_link_reach": "public",
+ "ancestors_link_role": "commenter",
+ "computed_link_reach": "public",
+ "computed_link_role": "editor",
+ "created_at": "<date>",
+ "creator": "<amy>",
+ "deleted_at": null,
+ "depth": 2,
+ "excerpt": null,
+ "is_favorite": false,
+ "link_role": "editor",
+ "link_reach": "public",
+ "nb_accesses_ancestors": 2,
+ "nb_accesses_direct": 0,
+ "numchild": 2,
+ "path": "00000010000001",
+ "title": "Step 1",
+ "updated_at": "<date>",
+ "user_role": null
+}
+### bob POST documents/{step1}/leave/ -> 204
+### amy POST documents/{plan}/leave/ -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy GET users/?q=bob@example.com -> 200
+[
+ {
+  "id": "<bob>",
+  "email": "bob@example.com",
+  "full_name": "bob",
+  "short_name": "bob",
+  "language": null,
+  "is_first_connection": true
+ },
+ {
+  "id": "<amy>",
+  "email": "amy@example.com",
+  "full_name": "amy",
+  "short_name": "amy",
+  "language": null,
+  "is_first_connection": false
+ },
+ {
+  "id": "<cat>",
+  "email": "cat@example.com",
+  "full_name": "cat",
+  "short_name": "cat",
+  "language": null,
+  "is_first_connection": true
+ }
+]
+### amy GET users/?q=bo -> 400
+{
+ "q": [
+  "Ensure this value has at least 3 characters (it has 2)."
+ ]
+}
+### amy GET users/?q=b -> 400
+{
+ "q": [
+  "Ensure this value has at least 3 characters (it has 1)."
+ ]
+}
+### amy GET users/?q=cat&document_id={plan} -> 200
+[
+ {
+  "id": "<cat>",
+  "email": "cat@example.com",
+  "full_name": "cat",
+  "short_name": "cat",
+  "language": null,
+  "is_first_connection": true
+ }
+]
+### amy PATCH users/{amy}/ {"language": "fr-fr"} -> 200
+{
+ "id": "<amy>",
+ "email": "amy@example.com",
+ "full_name": "amy",
+ "short_name": "amy",
+ "language": "fr-fr",
+ "is_first_connection": false
+}
+### amy PATCH users/{bob}/ {"language": "fr-fr"} -> 403
+{
+ "detail": "You do not have permission to perform this action."
+}
+### amy PATCH users/{amy}/ {"language": "klingon"} -> 400
+{
+ "language": [
+  "\"klingon\" is not a valid choice."
+ ]
+}
+### amy GET users/me/ -> 200
+{
+ "id": "<amy>",
+ "email": "amy@example.com",
+ "full_name": "amy",
+ "short_name": "amy",
+ "language": "fr-fr",
+ "is_first_connection": false
+}
