@@ -392,7 +392,7 @@ def:pub count -> int;              # return len([root.shared --> [?:Note]])
 endpoint /__jac/call/api/notes/count failed: DataError: .../.jac/data/api/graph.db holds a notes.Note node, b503494bc2e55bf90000000000000003, which no longer fits its type (.tag: expected a str, got None)
 ```
 
-The program did not change between the two starts. The value was accepted when written, and is refused when read. `apps/data`'s "Data that no longer fits" table lists only program changes as causes. Other dogfooders report the same on 0.4.0 and 0.3.3.
+The program did not change between the two starts. The value was accepted when written, and is refused when read. The same field typed `int | None` and holding `None` reads back fine: only `str | None` breaks. [vaultwarden-jac #14](https://github.com/ThiruvarankanM/vaultwarden-jac/blob/main/FINDINGS.md#14-a-str--none-field-holding-none-locks-every-user-out-after-a-restart) hit the same bug on 0.4.0, where it locked every user out. `apps/data`'s "Data that no longer fits" table lists only program changes as causes. Other dogfooders report the same on 0.4.0 and 0.3.3.
 
 Docs has many optional fields (a document's `excerpt`, `deleted_at`, an access's `user` or `team`). This port does not keep them as `str | None`. It keeps `""` for "none" and turns it into JSON `null` at the reply. That is a workaround forced by this bug, written down here, not silent.
 
